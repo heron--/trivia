@@ -9,21 +9,28 @@ import {
   getGotoAnswerReveal,
   getGotoRoundSelect,
 } from './reducer';
+import TopBar from './TopBar';
 import RoundSelect from './RoundSelect';
 import QuestionView from './QuestionView';
-import logo from './logo.svg';
 import './App.css';
 
 type GameContextValue = {
   state: AppState,
-  selectRound: (number) => void,
+  selectRound: (roundId: number) => void,
   gotoNextQuestion: () => void,
   gotoPreviousQuestion: () => void,
   gotoAnswerReveal: () => void,
   gotoRoundSelect: () => void,
 }
 
-export const GameContext = createContext<GameContextValue | null>(null);
+export const GameContext = createContext<GameContextValue>({
+  state: defaultState,
+  selectRound: num => { },
+  gotoNextQuestion: () => { },
+  gotoPreviousQuestion: () => { },
+  gotoAnswerReveal: () => { },
+  gotoRoundSelect: () => { }
+});
 
 function getGameContent(state: AppState) {
   if (!state.currentRoundId) {
@@ -45,8 +52,11 @@ function App() {
       gotoAnswerReveal: getGotoAnswerReveal(dispatch),
       gotoRoundSelect: getGotoRoundSelect(dispatch),
     }}>
-      <div className="App">
-        {getGameContent(state)}
+      <div className="app">
+        <div className="main-wrap">
+          <TopBar />
+          {getGameContent(state)}
+        </div>
       </div>
     </GameContext.Provider>
   );

@@ -1,0 +1,19 @@
+.round-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-select h1 {
+    font-size: 3rem;
+    line-height: 2.1;
+}
+
+.round-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-column-gap: 2vw; 
+    grid-row-gap: 2vw;
+}

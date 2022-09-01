@@ -1,9 +1,14 @@
-import { rounds, questions, round, question } from './questions';
+import { rounds, questions, Round, Question } from './questions';
 
 export type AppState = {
     currentQuestionIndex: number,
     currentRoundId: number | null,
     isAnswerReveal: boolean,
+}
+
+type Action = {
+    type: string,
+    roundId?: number,
 }
 
 const actions: string[] = [
@@ -17,20 +22,20 @@ const actions: string[] = [
 export const defaultState: AppState = {
     currentQuestionIndex: 0,
     currentRoundId: null,
-    isAnswerReveal: null,
+    isAnswerReveal: false,
 };
 
-export function reducer(state, action): AppState {
-    const currentRound: round | null = getCurrentRound(state);
+export function reducer(state: AppState, action: Action): AppState {
+    const currentRound: Round | null = getCurrentRound(state);
     switch (action.type) {
         case 'SELECT_ROUND':
             return {
                 ...state,
-                currentRoundId: action.roundId,
+                currentRoundId: action.roundId || null,
                 currentQuestionIndex: 0,
             };
         case 'GOTO_NEXT_QUESTION':
-            if (currentRound.questions.length === state.currentQuestionIndex + 1) {
+            if (currentRound && currentRound.questions.length === state.currentQuestionIndex + 1) {
                 return {
                     ...state,
                     currentQuestionIndex: 0
@@ -45,7 +50,7 @@ export function reducer(state, action): AppState {
             if (state.currentQuestionIndex === 0) {
                 return {
                     ...state,
-                    currentQuestionIndex: currentRound.questions.length - 1,
+                    currentQuestionIndex: currentRound ? currentRound.questions.length - 1 : 0,
                 }
             }
 
@@ -69,7 +74,7 @@ export function reducer(state, action): AppState {
 }
 
 /* Actions */
-export function getSelectRound(dispatch) {
+export function getSelectRound(dispatch: (action: Action) => void) {
     return function selectRound(roundId: number) {
         dispatch({
             type: 'SELECT_ROUND',
@@ -78,7 +83,7 @@ export function getSelectRound(dispatch) {
     }
 }
 
-export function getGotoNextQuestion(dispatch) {
+export function getGotoNextQuestion(dispatch: (action: Action) => void) {
     return function gotoNextQuestion() {
         dispatch({
             type: 'GOTO_NEXT_QUESTION',
@@ -86,7 +91,7 @@ export function getGotoNextQuestion(dispatch) {
     }
 }
 
-export function getGotoPreviousQuestion(dispatch) {
+export function getGotoPreviousQuestion(dispatch: (action: Action) => void) {
     return function gotoPreviousQuestion() {
         dispatch({
             type: 'GOTO_PREVIOUS_QUESTION',
@@ -94,7 +99,7 @@ export function getGotoPreviousQuestion(dispatch) {
     }
 }
 
-export function getGotoAnswerReveal(dispatch) {
+export function getGotoAnswerReveal(dispatch: (action: Action) => void) {
     return function gotoAnswerReveal() {
         dispatch({
             type: 'GOTO_ANSWER_REVEAL',
@@ -102,7 +107,7 @@ export function getGotoAnswerReveal(dispatch) {
     }
 }
 
-export function getGotoRoundSelect(dispatch) {
+export function getGotoRoundSelect(dispatch: (action: Action) => void) {
     return function gotoRoundSelect() {
         dispatch({
             type: 'GOTO_ROUND_SELECT'
@@ -111,14 +116,14 @@ export function getGotoRoundSelect(dispatch) {
 }
 
 /* selectors */
-export function getCurrentQuestion(state: AppState): question | null {
+export function getCurrentQuestion(state: AppState): Question | null {
     const currentQuestionId = getCurrentQuestionId(state);
     return questions.find(question => question.id === currentQuestionId) || null;
 }
 
-export function getCurrentRound(state: AppState): round | null {
+export function getCurrentRound(state: AppState): Round | null {
     if (state.currentRoundId) {
-        return rounds.find(round => round.id === state.currentRoundId);
+        return rounds.find(round => round.id === state.currentRoundId) || null;
     }
 
     return null;

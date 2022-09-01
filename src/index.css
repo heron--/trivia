@@ -1,13 +1,37 @@
+@font-face {
+  font-family: 'Ginto Normal';
+  src: url('./assets/ABCGintoNormal-Medium.woff2') format('woff2');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Ginto Nomral';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: 'Ginto Normal';
+}
+
+.primary-button {
+  border: 3px solid #1a1e22;
+  background-color: #fff382;
+  color: #1a1e22;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  transition: background-color ease 0.2s, color ease 0.2s;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #1a1e22;
+  color: #fff382;
+}
+
+.primary-button--small {
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 1.5rem;
 }
