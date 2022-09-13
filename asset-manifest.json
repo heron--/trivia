@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trivia/static/css/main.2f4b6c86.css",
-    "main.js": "/trivia/static/js/main.09eed1bf.js",
+    "main.js": "/trivia/static/js/main.c91d321d.js",
     "static/js/787.dddbe7b4.chunk.js": "/trivia/static/js/787.dddbe7b4.chunk.js",
     "static/media/monkey-ball-answer.png": "/trivia/static/media/monkey-ball-answer.cb7d5e65d575ad60c1e2.png",
     "static/media/monkey-ball-question.png": "/trivia/static/media/monkey-ball-question.3f469f465242098bfc2d.png",
@@ -29,6 +29,7 @@
     "static/media/warhol.webp": "/trivia/static/media/warhol.9816b549247f92c3a6e4.webp",
     "static/media/toronto-question.png": "/trivia/static/media/toronto-question.96ed2eeb51ea7bed94ab.png",
     "static/media/frida.jpeg": "/trivia/static/media/frida.70be29e061f7fbc2701f.jpeg",
+    "static/media/iverson.webp": "/trivia/static/media/iverson.bca16f11540c036ab1c6.webp",
     "static/media/jimmy-fallon.jpeg": "/trivia/static/media/jimmy-fallon.3ef9a633a5fff2f121ff.jpeg",
     "static/media/airplane.jpeg": "/trivia/static/media/airplane.d1a0f710c33f065fc5ba.jpeg",
     "static/media/big-comfy-couch.webp": "/trivia/static/media/big-comfy-couch.43f9cd1cb7ed960b752f.webp",
@@ -46,6 +47,7 @@
     "static/media/mitochondria.jpeg": "/trivia/static/media/mitochondria.b08ae2ea5af9d7de9666.jpeg",
     "static/media/tempest.jpeg": "/trivia/static/media/tempest.3030fa1579cef42b6e35.jpeg",
     "static/media/ABCGintoNormal-Medium.woff2": "/trivia/static/media/ABCGintoNormal-Medium.1fa0f127700d24c16fdd.woff2",
+    "static/media/greenbay.jpeg": "/trivia/static/media/greenbay.08d788906f96afcbf02a.jpeg",
     "static/media/communist-manifesto.jpeg": "/trivia/static/media/communist-manifesto.b329a9c9626269e6e569.jpeg",
     "static/media/animaniacs.webp": "/trivia/static/media/animaniacs.19c79ca5a60e7c616e5f.webp",
     "static/media/hong-kong.png": "/trivia/static/media/hong-kong.6638ab35d4fa28bc0f6f.png",
@@ -54,15 +56,16 @@
     "static/media/logo.png": "/trivia/static/media/logo.674e20bcc08126afe3ad.png",
     "static/media/bubble-bobble.jpeg": "/trivia/static/media/bubble-bobble.f43ce68facaaa6cecfc8.jpeg",
     "static/media/oman.jpeg": "/trivia/static/media/oman.02842538923ee761d16b.jpeg",
+    "static/media/stalefish.jpeg": "/trivia/static/media/stalefish.18e0b9a8294f57e534d3.jpeg",
     "static/media/indonesia.jpeg": "/trivia/static/media/indonesia.fb7a238af1655062164b.jpeg",
     "static/media/magic-school-bus.jpeg": "/trivia/static/media/magic-school-bus.4646df7e08ffa2f62385.jpeg",
     "index.html": "/trivia/index.html",
     "main.2f4b6c86.css.map": "/trivia/static/css/main.2f4b6c86.css.map",
-    "main.09eed1bf.js.map": "/trivia/static/js/main.09eed1bf.js.map",
+    "main.c91d321d.js.map": "/trivia/static/js/main.c91d321d.js.map",
     "787.dddbe7b4.chunk.js.map": "/trivia/static/js/787.dddbe7b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f4b6c86.css",
-    "static/js/main.09eed1bf.js"
+    "static/js/main.c91d321d.js"
   ]
 }
