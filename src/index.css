@@ -14,6 +14,10 @@ body {
   font-family: 'Ginto Normal';
 }
 
+body {
+  background-color: #fff382;
+}
+
 .primary-button {
   border: 3px solid #1a1e22;
   background-color: #fff382;

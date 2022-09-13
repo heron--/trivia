@@ -253,12 +253,21 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'In which winter sport are the terms “stale fish” and “mule kick” used?',
         answer: "Snowboarding",
+        answerImg: require('./assets/sports/stalefish.jpeg'),
     },
     {
         id: 44,
         type: 'short-answer',
         mainText: 'What is the oldest NFL franchise in continuous operation with the same name in the same location?',
         answer: "Green Bay Packers",
+        answerImg: require('./assets/sports/greenbay.jpeg'),
+    },
+    {
+        id: 45,
+        type: 'short-answer',
+        mainText: 'The first overall pick in the 1996 NBA Draft, this famous 76ers player often goes by the nickname "The Answer"',
+        answer: 'Allen Iverson',
+        answerImg: require('./assets/sports/iverson.webp'),
     },
     {
         id: 50,
@@ -561,7 +570,7 @@ const rounds: Round[] = [
     {
         id: 5,
         name: 'Sports and Leisure',
-        questions: [40, 41, 42, 43, 44],
+        questions: [40, 41, 42, 43, 44, 45],
     },
     {
         id: 6,
