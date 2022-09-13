@@ -1,7 +1,13 @@
 .top-bar {
     display: flex;
     justify-content: space-between;
-    height: 8%; 
+    align-items: center;
+    height: 8%;
+}
+
+.top-bar__logo {
+    display: flex;
+    align-items: center;
 }
 
 .top-bar__logo img {

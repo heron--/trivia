@@ -71,7 +71,6 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'A nice little floof',
         img: require('./assets/pokemon/bidoof.png'),
-        maxWidth: '30%',
         answer: 'Bidoof',
     },
     {
@@ -79,7 +78,6 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'Pointy-headed gen 1-er',
         img: require('./assets/pokemon/charmeleon.png'),
-        maxWidth: '30%',
         answer: 'Charmeleon',
     },
     {
@@ -87,15 +85,13 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'A very normal dragon',
         img: require('./assets/pokemon/drampa.png'),
-        maxWidth: '30%',
         answer: 'Drampa',
     },
     {
         id: 13,
         type: 'short-answer',
-        mainText: 'A regligious experience?',
+        mainText: 'A religious experience?',
         img: require('./assets/pokemon/arceus.png'),
-        maxWidth: '30%',
         answer: 'Arceus',
     },
     {
@@ -103,7 +99,6 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'Satoshi Tajiri\'s favorite',
         img: require('./assets/pokemon/poliwag.png'),
-        maxWidth: '30%',
         answer: 'Poliwag',
     },
     {
@@ -111,7 +106,6 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'Who gave that dog a knife!?',
         img: require('./assets/pokemon/zacian.png'),
-        maxWidth: '30%',
         answer: 'Zacian',
     },
     {
@@ -119,7 +113,6 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'An actual bag of trash',
         img: require('./assets/pokemon/trubbish.png'),
-        maxWidth: '30%',
         answer: 'Trubbish',
     },
     {
@@ -127,8 +120,7 @@ const questions: Question[] = [
         type: 'short-answer',
         mainText: 'Not a Digimon',
         img: require('./assets/pokemon/mewtwo.png'),
-        maxWidth: '30%',
-        answer: 'Mewtwo',
+        answer: 'Mewtwo (armored)',
     },
     {
         id: 20,
@@ -303,14 +295,14 @@ const questions: Question[] = [
     {
         id: 53,
         type: 'short-answer',
-        mainText: 'This game, pictured here, had players use a dial to navigate their ship and battle aliens',
+        mainText: 'This vector-based game, pictured here, had players use a dial to navigate their ship and battle aliens',
         answer: 'Tempest',
         img: require('./assets/retro-games/tempest.jpeg'),
     },
     {
         id: 54,
         type: 'short-answer',
-        mainText: 'Players controlled "Bub" or "Bob", two kids turned into Dragons, in which 1986 arcade game? ',
+        mainText: 'Players controlled "Bub" or "Bob", two kids turned into Dragons/Dinosaurs, in which 1986 arcade game? ',
         answer: 'Bubble Bobble',
         answerImg: require('./assets/retro-games/bubble-bobble.jpeg'),
     },
@@ -347,6 +339,198 @@ const questions: Question[] = [
         mainText: 'Which scientist developed the Polio vaccine in 1956?',
         answer: 'Jonas Salk',
     },
+    {
+        id: 62,
+        type: 'short-answer',
+        mainText: 'DNA is short for what?',
+        answer: 'Deoxyribonucleic Acid',
+    },
+    {
+        id: 63,
+        type: 'multiple-choice',
+        mainText: 'Which of these is a "cetacean"?',
+        answer: 0,
+        choices: [
+            'Dolphin',
+            'Crab',
+            'Mollusk',
+            'Sea Otter',
+        ]
+    },
+    {
+        id: 64,
+        type: 'short-answer',
+        mainText: 'Mushrooms are such fascinating little eukaryotes. What\'s the name for the study of fungi?',
+        answer: 'Mycology',
+    },
+    {
+        id: 65,
+        type: 'short-answer',
+        mainText: 'Not-eukaryotes, What type of cell does not have a true nucleus?',
+        answer: 'Prokaryotic',
+    },
+    {
+        id: 66,
+        type: 'short-answer',
+        mainText: 'Water bears! That\'s our informal name for what cute little creatures?',
+        answer: 'Tardigrades',
+        img: require('./assets/biology/tardigrade.jpeg'),
+    },
+    {
+        id: 70,
+        type: 'short-answer',
+        mainText: '1980<br />Leslie Nielsen<br />"I am serious... and don\'t call me Shirley."',
+        answer: 'Airplane!',
+        answerImg: require('./assets/80s-movies/airplane.jpeg'),
+    },
+    {
+        id: 71,
+        type: 'short-answer',
+        mainText: '1989<br />Meg Ryan<br />Billy Crystal<br />"I\'ll have what she\'s having."',
+        answer: 'When Harry Met Sally...',
+        answerImg: require('./assets/80s-movies/when-harry-met-sally.jpeg'),
+    },
+    {
+        id: 72,
+        type: 'short-answer',
+        mainText: '1982 to 1993<br />Ted Danson<br />Shelley Long<br />"It\'s a dog-eat-dog world and I\'m wearing Milk Bone underwear."',
+        answer: 'Cheers',
+        answerImg: require('./assets/80s-movies/cheers.jpeg'),
+    },
+    {
+        id: 73,
+        type: 'short-answer',
+        mainText: '1983 to 1986<br />War glorification<br />But no one ever dies<br />"Knowing is half the battle."',
+        answer: 'G.I. Joe: A Real American Hero',
+        answerImg: require('./assets/80s-movies/gi-joe.webp'),
+    },
+    {
+        id: 74,
+        type: 'short-answer',
+        mainText: '1988<br />Winona Ryder<br />Christian Slater<br />A teen comedy with a surprising amount of murder<br />"If You Were Happy Every Day Of Your Life You Wouldn\'t Be A Human Being. You\'d Be A Game-Show Host."',
+        answer: 'Heathers',
+        answerImg: require('./assets/80s-movies/heathers.jpeg'),
+    },
+    {
+        id: 75,
+        type: 'short-answer',
+        mainText: '1989<br />Robin Williams<br />Young men learning to express themselves<br />"No matter what people tell you, words and ideas can change the world."',
+        answer: 'Dead Poets Society',
+        answerImg: require('./assets/80s-movies/dead-poets-society.jpg'),
+    },
+    {
+        id: 76,
+        type: 'short-answer',
+        mainText: '1979 to 1988 (still counts)<br />Mrs. Garret<br />Jo, Tootie, Blair, and Natalie<br />"You take the good / you take the bad / you take them both / and there you have"',
+        answer: 'The Facts of Life',
+        answerImg: require('./assets/80s-movies/facts-of-life.jpeg'),
+    },
+    {
+        id: 80,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Magic School Bus',
+        img: require('./assets/cartoons/magic-school-bus.jpeg'),
+    },
+    {
+        id: 81,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Animaniacs (or Goodfeathers)',
+        img: require('./assets/cartoons/animaniacs.webp'),
+    },
+    {
+        id: 82,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Ben 10',
+        img: require('./assets/cartoons/ben10.jpg'),
+    },
+    {
+        id: 83,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Big Comfy Couch',
+        img: require('./assets/cartoons/big-comfy-couch.webp'),
+    },
+    {
+        id: 84,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Captain Kangaroo',
+        img: require('./assets/cartoons/captain-kangaroo.jpeg'),
+    },
+    {
+        id: 85,
+        type: 'short-answer',
+        mainText: '',
+        answer: 'Doodlebops',
+        img: require('./assets/cartoons/doodlebops.jpeg'),
+    },
+    {
+        id: 88,
+        type: 'short-answer',
+        mainText: 'BONUS: Who is this mouse?',
+        answer: 'Topo Gigio',
+        img: require('./assets/cartoons/topo-gigio.jpeg'),
+    },
+    {
+        id: 90,
+        type: 'short-answer',
+        mainText: 'What artist famously opined "In the future, everyone will be world-famous for 15 minutes"?',
+        answer: 'Andy Warhol',
+        answerImg: require('./assets/art/warhol.webp'),
+    },
+    {
+        id: 91,
+        type: 'short-answer',
+        mainText: 'In art, what is the term for the area around and between the subjects of an image? Here it\'s used quite excessively.',
+        answer: 'Negative Space',
+        img: require('./assets/art/negative.gif'),
+    },
+    {
+        id: 92,
+        type: 'short-answer',
+        mainText: 'What American Abstract Expressionist called his work "motion made visible memories, arrested in space."',
+        answer: 'Jackson Pollok',
+        answerImg: require('./assets/art/pollock.jpeg'),
+    },
+    {
+        id: 93,
+        type: 'short-answer',
+        mainText: 'Who painted these cute little water lillies?',
+        answer: 'Claude Monet',
+        img: require('./assets/art/monet.jpeg'),
+    },
+    {
+        id: 94,
+        type: 'short-answer',
+        mainText: 'Frédéric Auguste Bartholdi is best known for what sculpture?',
+        answer: 'Liberty Enlightening the World. More commonly known as the Statue of Liberty',
+        answerImg: require('./assets/art/liberty.jpeg'),
+    },
+    {
+        id: 95,
+        type: 'short-answer',
+        mainText: 'This boundary-pushing Mexian painter was often controversial. Their uncompromising self-portraits were the focal-point of their work. 55 paintings out of 143 were self-potraits. Their life was immortalized in film in 2002.',
+        answer: 'Frida Kahlo',
+        answerImg: require('./assets/art/frida.jpeg'),
+    },
+    {
+        id: 96,
+        type: 'short-answer',
+        mainText: 'What printmaking technique is the process of using strong acid or mordant to cut into the unprotected parts of a metal surface to create a design.',
+        answer: 'Etching',
+        answerImg: require('./assets/art/etching.jpeg'),
+    },
+    {
+        id: 97,
+        type: 'short-answer',
+        mainText: 'Who designed the Guggenheim Museum?',
+        answer: 'Frank Lloyd Wright',
+        img: require('./assets/art/guggenheim.jpeg'),
+    }
+
 ];
 
 console.log(`Total Questions: ${questions.length}`);
@@ -387,34 +571,33 @@ const rounds: Round[] = [
     {
         id: 7,
         name: 'Biology',
-        questions: [],
+        questions: [60, 61, 62, 63, 64, 65, 66],
     },
     {
         id: 8,
-        name: '80\'s Movies',
-        questions: [],
+        name: '80\'s Movies and Television',
+        questions: [70, 71, 72, 73, 74, 75, 76],
     },
     {
         id: 9,
-        name: 'Name that Cartoon',
-        questions: [],
+        name: 'Name that Kids\' Show',
+        questions: [80, 81, 82, 83, 84, 85, 88],
     },
     {
         id: 10,
-        name: 'Art History',
-        questions: [],
+        name: 'Artsy Art',
+        questions: [90, 91, 92, 93, 94, 95, 96, 97],
     },
-    {
-
-        id: 11,
-        name: 'Bountiful Botany',
-        questions: [],
-    },
-    {
-        id: 12,
-        name: 'Merry Maritime',
-        questions: [],
-    }
+    // {
+    //     id: 11,
+    //     name: 'Bountiful Botany',
+    //     questions: [],
+    // },
+    // {
+    //     id: 12,
+    //     name: 'Merry Maritime',
+    //     questions: [],
+    // }
 ]
 
 export { questions, rounds };
