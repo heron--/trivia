@@ -15,7 +15,8 @@ const actions: string[] = [
     'SELECT_ROUND',
     'GOTO_NEXT_QUESTION',
     'GOTO_PREVIOUS_QUESTION',
-    'GOTO_ANSWER_REVEAL',
+    'REVEAL_ANSWERS',
+    'HIDE_ANSWERS',
     'GOTO_ROUND_SELECT',
 ];
 
@@ -58,11 +59,15 @@ export function reducer(state: AppState, action: Action): AppState {
                 ...state,
                 currentQuestionIndex: state.currentQuestionIndex - 1,
             }
-        case 'GOTO_ANSWER_REVEAL':
+        case 'REVEAL_ANSWERS':
             return {
                 ...state,
                 isAnswerReveal: true,
-                currentQuestionIndex: 0,
+            }
+        case 'HIDE_ANSWERS':
+            return {
+                ...state,
+                isAnswerReveal: false,
             }
         case 'GOTO_ROUND_SELECT':
             return {
@@ -99,10 +104,18 @@ export function getGotoPreviousQuestion(dispatch: (action: Action) => void) {
     }
 }
 
-export function getGotoAnswerReveal(dispatch: (action: Action) => void) {
-    return function gotoAnswerReveal() {
+export function getRevealAnswers(dispatch: (action: Action) => void) {
+    return function revealAnswers() {
         dispatch({
-            type: 'GOTO_ANSWER_REVEAL',
+            type: 'REVEAL_ANSWERS',
+        });
+    }
+}
+
+export function getHideAnswers(dispatch: (action: Action) => void) {
+    return function hideAnswers() {
+        dispatch({
+            type: 'HIDE_ANSWERS',
         });
     }
 }

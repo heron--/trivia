@@ -6,7 +6,8 @@ import {
   getSelectRound,
   getGotoNextQuestion,
   getGotoPreviousQuestion,
-  getGotoAnswerReveal,
+  getRevealAnswers,
+  getHideAnswers,
   getGotoRoundSelect,
 } from './reducer';
 import TopBar from './TopBar';
@@ -19,7 +20,8 @@ type GameContextValue = {
   selectRound: (roundId: number) => void,
   gotoNextQuestion: () => void,
   gotoPreviousQuestion: () => void,
-  gotoAnswerReveal: () => void,
+  revealAnswers: () => void,
+  hideAnswers: () => void,
   gotoRoundSelect: () => void,
 }
 
@@ -28,7 +30,8 @@ export const GameContext = createContext<GameContextValue>({
   selectRound: num => { },
   gotoNextQuestion: () => { },
   gotoPreviousQuestion: () => { },
-  gotoAnswerReveal: () => { },
+  revealAnswers: () => { },
+  hideAnswers: () => { },
   gotoRoundSelect: () => { }
 });
 
@@ -49,7 +52,8 @@ function App() {
       selectRound: getSelectRound(dispatch),
       gotoNextQuestion: getGotoNextQuestion(dispatch),
       gotoPreviousQuestion: getGotoPreviousQuestion(dispatch),
-      gotoAnswerReveal: getGotoAnswerReveal(dispatch),
+      revealAnswers: getRevealAnswers(dispatch),
+      hideAnswers: getHideAnswers(dispatch),
       gotoRoundSelect: getGotoRoundSelect(dispatch),
     }}>
       <div className="app">
