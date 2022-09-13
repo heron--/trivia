@@ -7,6 +7,7 @@ export default function RoundSelect() {
     const { selectRound } = useContext(GameContext);
     return (
         <div className="round-select">
+            <p><em>Trivia for Attentive, not about Attentive</em></p>
             <h1>Choose a Category!</h1>
             <div className="round-list">
                 {rounds.map(round => <button className="primary-button" key={round.id} onClick={() => selectRound(round.id)}>{round.name}</button>)}
