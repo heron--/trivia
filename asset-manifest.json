@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trivia/static/css/main.2f4b6c86.css",
-    "main.js": "/trivia/static/js/main.6a0c8aca.js",
+    "main.js": "/trivia/static/js/main.09eed1bf.js",
     "static/js/787.dddbe7b4.chunk.js": "/trivia/static/js/787.dddbe7b4.chunk.js",
     "static/media/monkey-ball-answer.png": "/trivia/static/media/monkey-ball-answer.cb7d5e65d575ad60c1e2.png",
     "static/media/monkey-ball-question.png": "/trivia/static/media/monkey-ball-question.3f469f465242098bfc2d.png",
@@ -58,11 +58,11 @@
     "static/media/magic-school-bus.jpeg": "/trivia/static/media/magic-school-bus.4646df7e08ffa2f62385.jpeg",
     "index.html": "/trivia/index.html",
     "main.2f4b6c86.css.map": "/trivia/static/css/main.2f4b6c86.css.map",
-    "main.6a0c8aca.js.map": "/trivia/static/js/main.6a0c8aca.js.map",
+    "main.09eed1bf.js.map": "/trivia/static/js/main.09eed1bf.js.map",
     "787.dddbe7b4.chunk.js.map": "/trivia/static/js/787.dddbe7b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f4b6c86.css",
-    "static/js/main.6a0c8aca.js"
+    "static/js/main.09eed1bf.js"
   ]
 }
